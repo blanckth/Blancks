@@ -1,5 +1,3 @@
-"start": "node server.js",
-  "dev": "nodemon server.js"
 console.log(``);
 console.log(`Express Server by NodeJS - HTML(EJS)/CSS(SCSS) - SALAR MUHAMMADI`);
 console.log(``);
@@ -25,7 +23,7 @@ const feedbackService = new FeedbackService('./data/feedback.json');
 const routes = require('./routes');
 
 const app = express();
-const port = 6119;
+const port = process.env.PORT ||6119;
 
 app.set('trust proxy', 1);
 
