@@ -1,0 +1,57 @@
+.feedback_MainF {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #66666666;
+  width: 100vw;
+  min-height: 100vh;
+  .feed_Feedback {
+    h1 {
+      font-size: 4vw;
+      border-bottom: double #666 0.666vw;
+      padding: 1vw;
+    }
+    form {
+      #submit {
+        width: 100%;
+      }
+      .arrenged {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 0.222vw;
+        margin: 0.222vw;
+        label {
+          margin-right: 1vw;
+        }
+        input {
+          width: 33vw;
+        }
+        textarea {
+          width: 33vw;
+        }
+      }
+    }
+  }
+}
+.contact_MainC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  min-height: 50vh;
+  background: #444444 fixed top no-repeat;
+  background-size: cover;
+  .arrenged {
+    font-size: 1.666vw;
+    color: rosybrown;
+  }
+}
+@media (max-width: 768px) {
+  .contact_MainC {
+    .arrenged {
+      font-size: 3.666vw !important;
+    }
+  }
+}

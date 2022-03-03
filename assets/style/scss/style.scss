@@ -1,0 +1,125 @@
+$mainHeaderBackImg: url('/img/mainHeader/header-MainHead.JPG');
+$firstQSImg: url('/img/quoteSection/firstQS.jpg');
+$bridgeImage: url('/img/Bridge2.JPG');
+$clockImage: url('/img/Clock.JPG');
+body {
+  padding: 0;
+  margin: 0;
+}
+.header_MainHeader {
+  background: #691199 $bridgeImage no-repeat fixed top;
+  background-size: cover;
+  z-index: 1000;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .mainHeader_Title {
+    .text-slider-items {
+      display: none;
+    }
+    h1 {
+      font-family: Roboto;
+      color: whitesmoke;
+      text-align: left;
+      font-size: 2.666vw;
+      padding: 2.666vw;
+      text-shadow: black 0 0 2.666vw;
+      box-shadow: inset #040505 0 0 0.666vw;
+      strong {
+        font-size: 6.666vw;
+      }
+    }
+    h2 {
+      text-align: center;
+      font-size: 3.666vw;
+      color: whitesmoke;
+      text-shadow: gold 0 0 1.666vw;
+    }
+  }
+}
+.footer_MainFooter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100vw;
+  height: 22vh;
+  background: #666;
+  .foo_Copyright {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vw;
+  }
+}
+.quote_MainQ {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #444;
+  justify-content: center;
+  align-items: center;
+  a:hover {
+    .quote_Quote {
+      background-color: #040505;
+      color: #691199;
+    }
+  }
+  a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66%;
+    .quote_Quote {
+      background-color: #66666699;
+      display: flex;
+      align-items: stretch;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 4.66vw;
+      font-size: 1.666vw;
+      color: #00ff80;
+      transition: background-color 2.666s, color 1.666s;
+      transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      border-radius: 3%;
+      width: 100%;
+      h1 {
+        position: relative;
+      }
+      q {
+        text-align: right;
+      }
+    }
+    .quote_Quote:hover {
+      background-color: #040505;
+      color: #691199;
+    }
+  }
+
+  @media (max-width: 1155px) {
+    .quote_Quote {
+      font-size: 2.666vw !important;
+    }
+  }
+  @media (max-width: 576px) {
+    .quote_Quote {
+      font-size: 3.666vw !important;
+    }
+  }
+}
+.reg_MainR {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: #66669999 fixed center no-repeat $clockImage;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+}

@@ -1,0 +1,92 @@
+$hairStyleImage: url('/img/Barber13.JPG');
+.quote_MainQuotes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #111333;
+  width: 100vw;
+  min-height: 100vh;
+  .quote_MainImg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: #f1f1f199 1.666vw 1.666vw 2.412vw;
+    background: #333 $hairStyleImage top fixed no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 66%;
+    min-height: 66vh;
+    .quote_ImgF {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      left: -13vw;
+      position: relative;
+      border: double 1.666vw #464646;
+      width: 33%;
+      z-index: 666;
+      transition: width 2.666s;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .quote_ImgF:hover {
+      width: 44%;
+    }
+  }
+  .quote_QuoteQ {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 67%;
+    left: 13vw;
+    position: relative;
+    border: solid 1.666 #868686;
+    height: 88vh;
+    flex-direction: column;
+    background: #67678899;
+    z-index: 333;
+    padding: 3.666vw;
+    .quote_Title {
+      background: #768798;
+      height: 13%;
+      padding: 1vw;
+    }
+    .qqqMain {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: stretch;
+      background: #35353599;
+      height: 87%;
+      width: 100%;
+      .qqqTAL {
+        display: flex;
+        height: 13%;
+        padding: 1vw;
+        width: 100%;
+        background: #585858;
+        color: ghostwhite;
+      }
+
+      .qqqTAI {
+        display: flex;
+        min-height: 13%;
+        padding: 1vw;
+        width: 100%;
+        background: #585858;
+
+        .qqqInput {
+          display: flex;
+          text-decoration: none;
+          height: 100%;
+          width: 100%;
+          columns: auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.errorBox {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #666;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    padding: 1.666vw;
+    border-right: 0.111vw solid #fafafa;
+  }
+  h2 {
+    padding: 1.666vw;
+  }
+}

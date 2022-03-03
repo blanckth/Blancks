@@ -1,0 +1,156 @@
+$mushroomImage: url('/img/Mushroom.JPG');
+.registerFormSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #66666666;
+  #register_FormContainer {
+    height: 100%;
+    .form_Container {
+      * {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+      }
+      display: flex;
+      flex-direction: column;
+      margin: 0.666vw;
+      padding: 2.888vw;
+      .form_Header {
+        background: #691199;
+        position: relative;
+        padding: 3.666vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column !important;
+        border-radius: 0.1313vw 3.333vw 0.2626vw 3.333vw;
+        box-shadow: inset #664488 0 0 0.666vw 0.666vw;
+        border: white solid 0.1313vw;
+        margin: 0 auto 0.666vw;
+        color: cyan;
+        h2 {
+          margin-bottom: 1vw;
+        }
+      }
+      form {
+        position: relative;
+        background: #666888;
+        padding: 2.333vw;
+        margin: 0 auto;
+        border-radius: 3.333vw 0.13vw 3.333vw 0.266vw;
+        box-shadow: inset #691199 0 0 1.666vw 0.666vw, #664488 0.666vw 0.666vw 1.888vw,
+          #000000 0.888vw 0.888vw 1.999vw;
+        border: white solid 0.1313vw;
+        display: flex;
+        flex-direction: column;
+        .form_Inputs {
+          display: flex;
+          flex-direction: row;
+          .pers_Info {
+            margin: 0.222vw;
+            // background-color: blue;
+            border-right: #691199 dotted 0.222vw;
+            padding: 1vw;
+            div {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              flex-wrap: wrap;
+              padding: 0.222vw;
+              font-weight: bold;
+              * {
+                display: flex;
+              }
+            }
+          }
+          .acc_Info {
+            margin: 0.222vw;
+            // background-color: brown;
+            padding: 1vw;
+            border-left: dotted #691199 0.222vw;
+            div {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              flex-wrap: wrap;
+              padding: 0.222vw;
+              font-weight: bold;
+              * {
+                display: flex;
+              }
+            }
+          }
+        }
+        label {
+          color: floralwhite;
+          margin-right: 0.666 vw;
+        }
+        .float_Right {
+          float: right;
+        }
+        a {
+          text-decoration: none;
+        }
+
+        input[type='checkbox'] {
+          margin: 0.2323vw;
+        }
+        input[type='radio'] {
+          margin: 0 0.222vw;
+        }
+        input[type='submit'] {
+          padding: 0.666vw;
+          width: 100%;
+          font-weight: bolder;
+          text-transform: uppercase;
+          background-color: darkblue;
+          color: aquamarine;
+          border-radius: 1.313vw;
+          margin: 0.333vw;
+          transition: background-color 2s, color 1.666s;
+        }
+        input[type='submit']:hover {
+          background-color: aquamarine;
+          color: darkblue;
+        }
+        input:focus {
+          background-color: aqua;
+        }
+        .form_Submit {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  @media (max-width: 808px) {
+    .form_Inputs {
+      flex-direction: column !important;
+    }
+    .pers_Info {
+      border: none !important;
+    }
+    .acc_Info {
+      border: none !important;
+    }
+    .form_Header {
+      h2 {
+        font-size: 4vw !important;
+      }
+    }
+  }
+  @media (max-width: 404px) {
+    .form_Inputs {
+      label {
+        font-size: 3vw !important;
+      }
+      input {
+        font-size: 3vw !important;
+      }
+    }
+  }
+}
