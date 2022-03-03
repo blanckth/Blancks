@@ -1,3 +1,5 @@
+"start": "node server.js",
+  "dev": "nodemon server.js"
 console.log(``);
 console.log(`Express Server by NodeJS - HTML(EJS)/CSS(SCSS) - SALAR MUHAMMADI`);
 console.log(``);
