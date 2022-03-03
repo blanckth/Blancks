@@ -1,0 +1,149 @@
+.registerFormSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #66666666;
+}
+.registerFormSection #register_FormContainer {
+  height: 100%;
+}
+.registerFormSection #register_FormContainer .form_Container {
+  display: flex;
+  flex-direction: column;
+  margin: 0.666vw;
+  padding: 2.888vw;
+}
+.registerFormSection #register_FormContainer .form_Container * {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+.registerFormSection #register_FormContainer .form_Container .form_Header {
+  background: #691199;
+  position: relative;
+  padding: 3.666vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column !important;
+  border-radius: 0.1313vw 3.333vw 0.2626vw 3.333vw;
+  box-shadow: inset #664488 0 0 0.666vw 0.666vw;
+  border: white solid 0.1313vw;
+  margin: 0 auto 0.666vw;
+  color: cyan;
+}
+.registerFormSection #register_FormContainer .form_Container .form_Header h2 {
+  margin-bottom: 1vw;
+}
+.registerFormSection #register_FormContainer .form_Container form {
+  position: relative;
+  background: #666888;
+  padding: 2.333vw;
+  margin: 0 auto;
+  border-radius: 3.333vw 0.13vw 3.333vw 0.266vw;
+  box-shadow: inset #691199 0 0 1.666vw 0.666vw, #664488 0.666vw 0.666vw 1.888vw, #000000 0.888vw 0.888vw 1.999vw;
+  border: white solid 0.1313vw;
+  display: flex;
+  flex-direction: column;
+}
+.registerFormSection #register_FormContainer .form_Container form .form_Inputs {
+  display: flex;
+  flex-direction: row;
+}
+.registerFormSection #register_FormContainer .form_Container form .form_Inputs .pers_Info {
+  margin: 0.222vw;
+  border-right: #691199 dotted 0.222vw;
+  padding: 1vw;
+}
+.registerFormSection #register_FormContainer .form_Container form .form_Inputs .pers_Info div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.222vw;
+  font-weight: bold;
+}
+.registerFormSection #register_FormContainer .form_Container form .form_Inputs .pers_Info div * {
+  display: flex;
+}
+.registerFormSection #register_FormContainer .form_Container form .form_Inputs .acc_Info {
+  margin: 0.222vw;
+  padding: 1vw;
+  border-left: dotted #691199 0.222vw;
+}
+.registerFormSection #register_FormContainer .form_Container form .form_Inputs .acc_Info div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.222vw;
+  font-weight: bold;
+}
+.registerFormSection #register_FormContainer .form_Container form .form_Inputs .acc_Info div * {
+  display: flex;
+}
+.registerFormSection #register_FormContainer .form_Container form label {
+  color: floralwhite;
+  margin-right: 0.666 vw;
+}
+.registerFormSection #register_FormContainer .form_Container form .float_Right {
+  float: right;
+}
+.registerFormSection #register_FormContainer .form_Container form a {
+  text-decoration: none;
+}
+.registerFormSection #register_FormContainer .form_Container form input[type=checkbox] {
+  margin: 0.2323vw;
+}
+.registerFormSection #register_FormContainer .form_Container form input[type=radio] {
+  margin: 0 0.222vw;
+}
+.registerFormSection #register_FormContainer .form_Container form input[type=submit] {
+  padding: 0.666vw;
+  width: 100%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  background-color: darkblue;
+  color: aquamarine;
+  border-radius: 1.313vw;
+  margin: 0.333vw;
+  transition: background-color 2s, color 1.666s;
+}
+.registerFormSection #register_FormContainer .form_Container form input[type=submit]:hover {
+  background-color: aquamarine;
+  color: darkblue;
+}
+.registerFormSection #register_FormContainer .form_Container form input:focus {
+  background-color: aqua;
+}
+.registerFormSection #register_FormContainer .form_Container form .form_Submit {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 808px) {
+  .registerFormSection .form_Inputs {
+    flex-direction: column !important;
+  }
+  .registerFormSection .pers_Info {
+    border: none !important;
+  }
+  .registerFormSection .acc_Info {
+    border: none !important;
+  }
+  .registerFormSection .form_Header h2 {
+    font-size: 4vw !important;
+  }
+}
+@media (max-width: 404px) {
+  .registerFormSection .form_Inputs label {
+    font-size: 3vw !important;
+  }
+  .registerFormSection .form_Inputs input {
+    font-size: 3vw !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

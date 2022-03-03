@@ -1,0 +1,129 @@
+<!-- Register -->
+<dic class="registerFormSection">
+  <div id="register_FormContainer">
+    <div class="form_Container">
+      <div class="form_Header">
+        <h2>Register New Customer</h2>
+        <% if (locals.errors) { %>
+        <div class="alert alert-danger">
+          <ul>
+            <% errors.foreach(function(error){ %>
+            <li><%= error.msg %></li>
+            <% }) %>
+          </ul>
+        </div>
+        <% } else if(locals.successMessage) { %>
+        <div class="alert alert-success">
+          <%= successMessage %>
+        </div>
+        <% } %>
+      </div>
+      <form method="POST" action="/register">
+        <div class="form_Inputs">
+          <div class="pers_Info">
+            <div>
+              <label for="firstName">First name:</label>
+              <input
+                class="float_Right"
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Your Firstname"
+                required
+              />
+            </div>
+            <br />
+            <div>
+              <label for="lastName">Last name:</label>
+              <input
+                class="float_Right"
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Your Lastname"
+                required
+              />
+            </div>
+            <br />
+            <div>
+              <label>Sex:</label>
+              <div class="float_Right">
+                <label for="male">Male</label>
+                <input type="radio" name="sex" id="male" value="Male" required />
+                <label for="female">Female</label>
+                <input type="radio" name="sex" id="female" value="Female" required />
+                <label for="other">Other</label>
+                <input type="radio" name="sex" id="other" value="Other" required />
+              </div>
+            </div>
+            <br />
+            <div>
+              <label for="birthDay">Birthday:</label>
+              <input class="float_Right" type="date" name="birthday" id="birthDay" required />
+            </div>
+          </div>
+          <div class="acc_Info">
+            <div>
+              <label for="userName">User name:</label>
+              <input
+                class="float_Right"
+                type="text"
+                name="userName"
+                id="userName"
+                placeholder="Your Username"
+                required
+                pattern=".{8,24}"
+              />
+            </div>
+            <br />
+            <div>
+              <label for="passWord">Password:</label>
+              <input
+                class="float_Right"
+                type="password"
+                name="password"
+                id="passWord"
+                placeholder="Your Password"
+                required
+                pattern=".{8,24}"
+              />
+            </div>
+            <br />
+            <div>
+              <label for="eMail">Email:</label>
+              <input
+                class="float_Right"
+                type="text"
+                name="email"
+                id="eMail"
+                placeholder="email.name@something"
+                required
+              />
+            </div>
+            <br />
+            <div>
+              <p>
+                <a href="#">Terms & Conditions!</a>
+              </p>
+            </div>
+            <div>
+              <label for="tc-Agreement">I agree to the terms & conditions!</label>
+              <input
+                class="float_Right"
+                type="checkbox"
+                name="tc-agreement"
+                id="tc-Agreement"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="form_Submit">
+          <input type="submit" name="submit" id="subMit" />
+        </div>
+      </form>
+    </div>
+  </div>
+</dic>
+<!-- Register -->

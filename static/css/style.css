@@ -1,0 +1,121 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header_MainHeader {
+  background: #691199 url("/img/wall.jpg") no-repeat fixed top;
+  background-size: cover;
+  z-index: 1000;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_MainHeader .mainHeader_Title .text-slider-items {
+  display: none;
+}
+.header_MainHeader .mainHeader_Title h1 {
+  font-family: Roboto;
+  color: whitesmoke;
+  text-align: left;
+  font-size: 2.666vw;
+  padding: 2.666vw;
+  text-shadow: black 0 0 2.666vw;
+  box-shadow: inset #040505 0 0 0.666vw;
+}
+.header_MainHeader .mainHeader_Title h1 strong {
+  font-size: 6.666vw;
+}
+.header_MainHeader .mainHeader_Title h2 {
+  text-align: center;
+  font-size: 3.666vw;
+  color: whitesmoke;
+  text-shadow: gold 0 0 1.666vw;
+}
+
+.footer_MainFooter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100vw;
+  height: 22vh;
+  background: #666;
+}
+.footer_MainFooter .foo_Copyright {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1vw;
+}
+
+.quote_MainQ {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #444;
+  justify-content: center;
+  align-items: center;
+}
+.quote_MainQ a:hover .quote_Quote {
+  background-color: #040505;
+  color: #691199;
+}
+.quote_MainQ a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66%;
+}
+.quote_MainQ a .quote_Quote {
+  background-color: #66666699;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 4.66vw;
+  font-size: 1.666vw;
+  color: #00ff80;
+  transition: background-color 2.666s, color 1.666s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  border-radius: 3%;
+  width: 100%;
+}
+.quote_MainQ a .quote_Quote h1 {
+  position: relative;
+}
+.quote_MainQ a .quote_Quote q {
+  text-align: right;
+}
+.quote_MainQ a .quote_Quote:hover {
+  background-color: #040505;
+  color: #691199;
+}
+@media (max-width: 1155px) {
+  .quote_MainQ .quote_Quote {
+    font-size: 2.666vw !important;
+  }
+}
+@media (max-width: 576px) {
+  .quote_MainQ .quote_Quote {
+    font-size: 3.666vw !important;
+  }
+}
+
+.reg_MainR {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: #66669999 fixed center no-repeat url("/img/Clock.JPG");
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,55 @@
+.feedback_MainF {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #66666666;
+  width: 100vw;
+  min-height: 100vh;
+}
+.feedback_MainF .feed_Feedback h1 {
+  font-size: 4vw;
+  border-bottom: double #666 0.666vw;
+  padding: 1vw;
+}
+.feedback_MainF .feed_Feedback form #submit {
+  width: 100%;
+}
+.feedback_MainF .feed_Feedback form .arrenged {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0.222vw;
+  margin: 0.222vw;
+}
+.feedback_MainF .feed_Feedback form .arrenged label {
+  margin-right: 1vw;
+}
+.feedback_MainF .feed_Feedback form .arrenged input {
+  width: 33vw;
+}
+.feedback_MainF .feed_Feedback form .arrenged textarea {
+  width: 33vw;
+}
+
+.contact_MainC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  min-height: 50vh;
+  background: #444444 fixed top no-repeat;
+  background-size: cover;
+}
+.contact_MainC .arrenged {
+  font-size: 1.666vw;
+  color: rosybrown;
+}
+
+@media (max-width: 768px) {
+  .contact_MainC .arrenged {
+    font-size: 3.666vw !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

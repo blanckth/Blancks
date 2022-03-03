@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <%- include('__partials/meta.ejs') %>
+    <!-- Meta -->
+
+    <!-- Theme Link -->
+    <%- include('__partials/style.ejs') %>
+    <!-- Theme Link -->
+  </head>
+  <body>
+    <!-- start section navbar -->
+    <%- include('__partials/navigation.ejs') %>
+    <!-- End section navbar -->
+
+    <!-- Header Main Header -->
+    <%- include('__partials/mainHeader.ejs') %>
+    <!-- Header Main Header -->
+
+    <!-- Resume Card -->
+    <%- include(`../pages/${template}`) %>
+    <!-- Resume Card -->
+
+    <!-- Footer Main Footer -->
+    <%- include('__partials/footer.ejs') %>
+    <!-- Footer Main Footer -->
+
+    <!-- JavaScript Libraries -->
+    <%- include('__partials/script.ejs') %>
+    <!-- JavaScript Libraries -->
+  </body>
+</html>
